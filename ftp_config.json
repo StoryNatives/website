@@ -1,0 +1,9 @@
+{
+  "options": {
+    "username": "new@storynatives.com",
+    "password": "LaiJ5zvWhC+o",
+    "host": "storynatives.com",
+    "dest": "/wp-content/themes/storynatives",
+    "port": 21
+  }
+}
