@@ -1,0 +1,30 @@
+body {
+  color: $base;
+  min-height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  min-width: 320px;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+input {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+p {
+  margin: 0 0 10px;
+  padding: 0;
+  line-height: 2;
+  font-size: 16px;
+}
+
+
+@mixin tran($transition) {
+  -webkit-transition: all $transition linear;
+  -moz-transition: all $transition linear;
+  -ms-transition: all $transition linear;
+  -o-transition: all $transition linear;
+  transition: all $transition linear;
+}

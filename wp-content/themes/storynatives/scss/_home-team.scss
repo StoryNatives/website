@@ -1,0 +1,42 @@
+[home="team"] {
+  background: #fff;
+  overflow-x: hidden;
+  color: #333;
+
+  .home-header {
+    &:after {
+      border-color: #333;
+    }
+  }
+
+  .home-team-member {
+    margin-top: 30px;
+  }
+
+  .home-team-member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-size: cover;
+  }
+
+  .home-team-member-content {
+    margin-left: 165px;
+
+    .home-team-member-title {
+      font-weight: 100;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      font-size: 26px;
+      line-height: 26px;
+      border-bottom: 1px dotted #333;
+
+      span {
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+}

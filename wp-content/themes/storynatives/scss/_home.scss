@@ -1,0 +1,43 @@
+[home] {
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  min-height: 100vh;
+
+  .overlay {
+    background: url("../img/overlay-pattern.png");
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .home-header {
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+
+    &:after {
+        //display: inline-block;
+      content: "";
+      display: block;
+      border-bottom: 1px dotted #FFFFFF;
+      width: 30px;
+      height: 1px;
+      margin: 15px auto 0;
+    }
+  }
+
+  .home-sub-header {
+    text-align: center;
+    position: relative;
+    padding: 15px 30px 0;
+    max-width: 800px;
+    margin: auto;
+
+    p {
+    }
+  }
+}

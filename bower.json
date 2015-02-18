@@ -1,0 +1,21 @@
+{
+  "name": "STORY NATIVES",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ANDigital/and-people-web-php",
+  "authors": [
+    "Nathan N <nazzanuk@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.2.0",
+    "bootstrap": "~3.3.2",
+    "velocity": "~1.2.1"
+  }
+}

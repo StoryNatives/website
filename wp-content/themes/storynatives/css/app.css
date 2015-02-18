@@ -1,0 +1,465 @@
+/* line 1, ../scss/_global.scss */
+body {
+  color: #333;
+  min-height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  min-width: 320px;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* line 12, ../scss/_global.scss */
+input {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* line 16, ../scss/_global.scss */
+p {
+  margin: 0 0 10px;
+  padding: 0;
+  line-height: 2;
+  font-size: 16px;
+}
+
+/* line 1, ../scss/_header.scss */
+#header {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  z-index: 100;
+  height: 80px;
+}
+/* line 12, ../scss/_header.scss */
+#header .header-logo {
+  height: 70px;
+  padding: 5px 0;
+  float: left;
+}
+/* line 17, ../scss/_header.scss */
+#header .header-logo img {
+  height: 70px;
+  width: auto;
+}
+/* line 23, ../scss/_header.scss */
+#header #main-menu {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* line 24, ../scss/_header.scss */
+#header #main-menu ul, #header #main-menu li, #header #main-menu a {
+  color: inherit;
+  padding: 0;
+  border: none;
+  margin: 0;
+  list-style: none;
+}
+/* line 36, ../scss/_header.scss */
+#header #main-menu ul {
+  float: right;
+}
+/* line 38, ../scss/_header.scss */
+#header #main-menu ul li {
+  float: left;
+  line-height: 80px;
+  height: 80px;
+  cursor: pointer;
+  padding: 0 20px;
+}
+/* line 45, ../scss/_header.scss */
+#header #main-menu ul li:after {
+  content: "\2022";
+  color: #ffffff;
+  position: absolute;
+  margin-left: 18px;
+}
+/* line 52, ../scss/_header.scss */
+#header #main-menu ul li:hover {
+  color: #bcd30c;
+}
+/* line 57, ../scss/_header.scss */
+#header #main-menu ul li:last-child:after {
+  display: none;
+}
+
+/* line 1, ../scss/_home.scss */
+[home] {
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  min-height: 100vh;
+}
+/* line 7, ../scss/_home.scss */
+[home] .overlay {
+  background: url("../img/overlay-pattern.png");
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+/* line 15, ../scss/_home.scss */
+[home] .home-header {
+  padding-top: 80px;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+}
+/* line 22, ../scss/_home.scss */
+[home] .home-header:after {
+  content: "";
+  display: block;
+  border-bottom: 1px dotted #FFFFFF;
+  width: 30px;
+  height: 1px;
+  margin: 15px auto 0;
+}
+/* line 33, ../scss/_home.scss */
+[home] .home-sub-header {
+  text-align: center;
+  position: relative;
+  padding: 15px 30px 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* line 1, ../scss/_home-splash.scss */
+[home="splash"] {
+  background-image: url("../img/homebg21.jpg");
+  background-position: bottom;
+  height: 100vh;
+}
+/* line 6, ../scss/_home-splash.scss */
+[home="splash"] .overlay {
+  background: url("../img/overlay-pattern2.png");
+}
+/* line 10, ../scss/_home-splash.scss */
+[home="splash"] .darken-overlay {
+  background: black;
+  opacity: 0.2;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+/* line 18, ../scss/_home-splash.scss */
+[home="splash"] .logo {
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 0 30px;
+}
+/* line 28, ../scss/_home-splash.scss */
+[home="splash"] .logo img {
+  width: 450px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+/* line 34, ../scss/_home-splash.scss */
+[home="splash"] .logo p {
+  margin-bottom: 30px;
+}
+/* line 38, ../scss/_home-splash.scss */
+[home="splash"] .logo .splash-button {
+  font-weight: 300;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 52, ../scss/_home-splash.scss */
+[home="splash"] .logo .splash-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 1, ../scss/_home-services.scss */
+[home="services"] {
+  background: #333;
+  overflow-x: hidden;
+}
+/* line 5, ../scss/_home-services.scss */
+[home="services"] .home-services-gallery {
+  margin-top: 30px;
+}
+/* line 7, ../scss/_home-services.scss */
+[home="services"] .home-services-gallery .gallery {
+  height: 350px;
+  background: indianred;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* line 14, ../scss/_home-services.scss */
+[home="services"] .home-services-gallery .gallery .overlay {
+  background: url("../img/overlay-pattern.png");
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 350px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 200;
+}
+
+/* line 1, ../scss/_home-clients.scss */
+[home="clients"] {
+  background: #626900;
+  overflow-x: hidden;
+}
+/* line 6, ../scss/_home-clients.scss */
+[home="clients"] .home-clients-gallery {
+  margin-top: 30px;
+  position: relative;
+}
+/* line 9, ../scss/_home-clients.scss */
+[home="clients"] .home-clients-gallery .gallery {
+  background: #ffffff;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #333;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+/* line 21, ../scss/_home-clients.scss */
+[home="clients"] .home-clients-gallery .gallery .overlay {
+  background: url("../img/overlay-pattern.png");
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px;
+  color: #333;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 48, ../scss/_home-clients.scss */
+[home="clients"] .home-clients-gallery .gallery:hover .overlay {
+  opacity: 0;
+}
+/* line 54, ../scss/_home-clients.scss */
+[home="clients"] .home-clients-gallery .gallery-content {
+  margin-left: 215px;
+}
+/* line 58, ../scss/_home-clients.scss */
+[home="clients"] .home-clients-gallery .home-clients-title {
+  font-size: 60px;
+  font-weight: 200;
+}
+/* line 63, ../scss/_home-clients.scss */
+[home="clients"] .home-clients-gallery .home-clients-sub-title {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 71, ../scss/_home-clients.scss */
+[home="clients"] .home-clients-line {
+  display: block;
+  border-bottom: 1px dotted #fff;
+  width: 200px;
+  height: 1px;
+  margin: 50px auto 50px;
+  position: relative;
+}
+
+/* line 1, ../scss/_home-projects.scss */
+[home="projects"] {
+  background: #c70000;
+  overflow-x: hidden;
+}
+/* line 6, ../scss/_home-projects.scss */
+[home="projects"] .home-clients-gallery {
+  margin-top: 30px;
+}
+/* line 8, ../scss/_home-projects.scss */
+[home="projects"] .home-clients-gallery .gallery {
+  background: #ffffff;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #333;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+/* line 19, ../scss/_home-projects.scss */
+[home="projects"] .home-clients-gallery .gallery .overlay {
+  background: url("../img/overlay-pattern.png");
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+/* line 34, ../scss/_home-projects.scss */
+[home="projects"] .home-clients-gallery .home-clients-title {
+  font-size: 60px;
+  font-weight: 200;
+}
+/* line 39, ../scss/_home-projects.scss */
+[home="projects"] .home-clients-gallery .home-clients-sub-title {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 47, ../scss/_home-projects.scss */
+[home="projects"] .home-clients-line {
+  display: block;
+  border-bottom: 1px dotted #fff;
+  width: 200px;
+  height: 1px;
+  margin: 50px auto 50px;
+  position: relative;
+}
+
+/* line 1, ../scss/_home-team.scss */
+[home="team"] {
+  background: #fff;
+  overflow-x: hidden;
+  color: #333;
+}
+/* line 7, ../scss/_home-team.scss */
+[home="team"] .home-header:after {
+  border-color: #333;
+}
+/* line 12, ../scss/_home-team.scss */
+[home="team"] .home-team-member {
+  margin-top: 30px;
+}
+/* line 16, ../scss/_home-team.scss */
+[home="team"] .home-team-member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-size: cover;
+}
+/* line 23, ../scss/_home-team.scss */
+[home="team"] .home-team-member-content {
+  margin-left: 165px;
+}
+/* line 26, ../scss/_home-team.scss */
+[home="team"] .home-team-member-content .home-team-member-title {
+  font-weight: 100;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 26px;
+  line-height: 26px;
+  border-bottom: 1px dotted #333;
+}
+/* line 34, ../scss/_home-team.scss */
+[home="team"] .home-team-member-content .home-team-member-title span {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../scss/_home-contact.scss */
+[home="contact"] {
+  background: #ff6600;
+}
+/* line 4, ../scss/_home-contact.scss */
+[home="contact"] .home-contact {
+  margin-top: 30px;
+}
+/* line 7, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-contact-icons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 11, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-contact-icons a {
+  color: inherit;
+}
+/* line 16, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-contact-map {
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+}
+/* line 25, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-contact-form .home-contact-form-label {
+  margin-bottom: 10px;
+}
+/* line 29, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-contact-form .home-contact-form-input {
+  background: rgba(0, 0, 0, 0.3);
+  color: #333;
+  border: none;
+  border-radius: 3px;
+  line-height: 35px;
+  min-height: 35px;
+  padding: 0 10px;
+  width: 100%;
+  color: #ffffff;
+  margin-bottom: 30px;
+  outline: none;
+  margin: 0 auto 30px;
+}
+/* line 43, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-contact-form .home-contact-form-input:focus {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 50, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-submit-button {
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+  margin: 0 auto 30px;
+  outline: none;
+}
+/* line 65, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-submit-button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 69, ../scss/_home-contact.scss */
+[home="contact"] .home-contact .home-submit-button:focus {
+  background: rgba(0, 0, 0, 0.5);
+}

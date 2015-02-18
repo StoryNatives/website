@@ -1,0 +1,79 @@
+[home="clients"] {
+  background: #626900;
+  overflow-x: hidden;
+//  color: #626900;
+
+  .home-clients-gallery {
+    margin-top: 30px;
+    position: relative;
+    .gallery {
+      background: #ffffff;
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: $base;
+      border: 1px solid #fff;
+      margin-bottom: 15px;
+      margin-top: 15px;
+
+      .overlay {
+        background: url("../img/overlay-pattern.png");
+        background: rgba(255,255,255,0.9);
+        z-index: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 80px;
+        color: $base;
+        opacity: 1;
+        cursor: pointer;
+
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+
+        span {
+
+        }
+      }
+
+      &:hover {
+        .overlay {
+          opacity: 0;
+        }
+      }
+    }
+
+    .gallery-content {
+      margin-left:215px;
+    }
+
+    .home-clients-title {
+      font-size: 60px;
+      font-weight: 200;
+    }
+
+    .home-clients-sub-title {
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .home-clients-line {
+    display: block;
+    border-bottom: 1px dotted #fff;
+    width: 200px;
+    height: 1px;
+    margin: 50px auto 50px;
+    position: relative;
+  }
+}

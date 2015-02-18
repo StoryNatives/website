@@ -1,0 +1,28 @@
+[home="services"] {
+  background: #333;
+  overflow-x: hidden;
+
+  .home-services-gallery {
+    margin-top: 30px;
+    .gallery {
+      height: 350px;
+      background: indianred;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+
+      .overlay {
+        background: url("../img/overlay-pattern.png");
+        z-index: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        line-height: 350px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 200;
+      }
+    }
+  }
+}
