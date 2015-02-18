@@ -1,8 +1,18 @@
 module.exports = function(grunt) {
 
+    //ftp_config.json
+    //{
+    //    "options": {
+    //        "username": "username",
+    //        "password": "password",
+    //        "host": "host",
+    //        "dest": "dest",
+    //        "port": 21
+    //    }
+    //}
 
     var ftp_config = grunt.file.readJSON('ftp_config.json');
-    console.log(ftp_config);
+    //console.log(ftp_config);
 
     // Project configuration.
     grunt.initConfig({
